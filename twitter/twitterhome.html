@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style type="text/css">
+		body {
+			background-color: #F5F8FA;
+			margin: 0;
+		}
+		.overallflex {
+			display: grid;
+  grid-template-columns: 30% 40% 30%;
+		}
+		.whiteback {
+			background-color: white;
+			padding: 10px;
+			border: 1px solid lightgrey;
+			border-top-radius: 4px;
+		}
+		::placeholder { 
+  color: white;
+  opacity: 0.9;
+}
+		.flex-text {
+			margin-left: 10px;
+			width: 100%;
+		}
+		.flex-icon {
+			display: flex;
+    max-width: 40%;
+    justify-content: space-between;
+    color: grey;
+    font-size: 13px;
+		}
+		.text-dots {
+			    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+		}
+		.overflex {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+		.columnflex {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+				.twitter-grid1 {
+			margin-left: 9%;
+		}
+		.grid3cross {
+margin-left: 10px;
+		}
+		.grid3textdots {
+			margin-left: 10px;
+			width: 67%;
+		}
+		.home-notification {
+			background: white;padding: 5px;display: flex;justify-content: space-evenly;align-items: center;position: relative;
+		}
+		.col-grey {
+			color: grey;
+		}
+		input {
+			border-radius: 12px;
+    height: 24px;background-color: #a3acb2;color: white;border:#a3acb2
+		}
+		.tweet-text {
+			font-weight: bold;font-size: 18px;
+		}
+		.grid3follow {
+			background-color: #F6F9FB;height: 30px;
+    width: 56%;
+    border-radius: 4px;
+    border: 1px solid lightgrey;margin-top: 5px;
+		}
+		@media 
+  (min-device-width: 768px) 
+  and (max-device-width: 1280px) {
+  	.overallflex {
+			display: grid;
+  grid-template-columns: 30% 40% 30%;
+		}
+		.twitter-grid1 {
+			margin-left: 3%;
+		}
+		.columnflex {
+			padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 7px;
+    padding-left: 7px;
+		}
+		.grid3textdots {
+margin-left: 8px;
+    width: 65%;
+
+		}
+		.grid3cross {
+			margin-left: 0;
+		}
+		.overflex {
+			justify-content: flex-end;
+		}
+		.grid3follow {
+			background-color: #F6F9FB;height: 30px;
+    width: 56%;
+    border-radius: 4px;
+    border: 1px solid lightgrey;margin-top: 5px;
+		}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) { 
+  	.twitter-grid1 {
+  	    margin-left: 5%;
+  	}
+  	 }
+	</style>
+
+
+
+
+
+</head>
+<body>
+	<div class="home-notification" >
+		<div class="col-grey">
+			<i class="fa fa-home" aria-hidden="true"></i> Home&nbsp;&nbsp;
+			<i class="fa fa-bell" aria-hidden="true"></i> Notifications&nbsp;&nbsp;
+			<i class="fa fa-hashtag" aria-hidden="true"></i> Discover&nbsp;&nbsp;
+			<i class="fa fa-user" aria-hidden="true"></i> Me&nbsp;&nbsp;
+		</div>
+		<div >
+			<i class="fa fa-twitter" aria-hidden="true" style="color: skyblue;font-size: 22px;"></i>
+		</div>
+		<div >
+			<input type="text" name="" placeholder=" search" >&nbsp;&nbsp;
+    <i class="fa fa-envelope-o" aria-hidden="true" class="col-grey" style="color: grey"></i>&nbsp;&nbsp;
+    <i class="fa fa-cog" aria-hidden="true" class="col-grey" style="color: grey"></i>&nbsp;&nbsp;
+    <img src="feather.png" width="15" style="color: white;text-align: center">
+		</div>
+		
+	</div>
+<img src="background.jpg" style="width: 100%;max-height: 304px;position: relative;">
+<div style="background-color: white;    margin-top: -5px;">
+
+		<div class="overflex">
+			<div class="columnflex" style="border-bottom-color:black;border:2px solid black;border-top: 0;border-right: 0;border-left: 0;margin-left: 23%;" id="Tweets">
+				<div class="col-grey">Tweets</div>
+				<div class="tweet-text" >9566</div>
+				
+			</div>
+			<div class="columnflex" id="photos">
+				<div class="col-grey" >Photos/Videos</div>
+				<div class="tweet-text" >345</div>
+				
+			</div>
+			<div class="columnflex" id="Following">
+				<div class="col-grey">Following</div>
+				<div class="tweet-text">367</div>
+				
+			</div>
+			<div class="columnflex" id="Followers">
+				<div class="col-grey">Followers</div>
+				<div class="tweet-text">156</div>
+				
+			</div>
+			<div class="columnflex" id="Favorites">
+				<div class="col-grey">Favorites</div>
+				<div class="tweet-text">789</div>
+				
+			</div>
+			<div class="columnflex" id="more">
+				<div style="padding: 9px;"></div>
+				<div style="font-size: 18px;"><b>More</b> <i class="fa fa-chevron-down col-grey" aria-hidden="true" style="font-weight: normal;font-size: 10px;"></i></div>
+				
+			</div>
+			<div class="columnflex" style="margin-left: 13%" id="followbtn">
+					<i class="fa fa-cog" aria-hidden="true" class="col-grey" style="color: grey"></i>
+					<button style="background-color: #F6F9FB;height: 30px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;    margin-left: 8px;"><i class="fa fa-user-plus" aria-hidden="true" style="color: #79b9f0"></i>  Follow</button>
+				</div>
+
+
+
+
+		</div>
+
+</div>
+<div class="overallflex">
+	<div>
+		<div style="position: absolute;
+  top: 250px;
+  left: 30px; " class="twitter-grid1">
+<img src="image1.jpg" style="width: 180px;
+    height: 180px;border:3px solid white;border-radius: 5px;"><br>	
+    <span><b style="font-size: 20px;">Silaja</b></span><br>
+    <span class="col-grey" style="font-size: 14px;">@sailu</span><br>
+    <span class="col-grey" style="margin-top: 15px;">i love good punmanship</span><br>
+    <i class="fa fa-map-marker col-grey" style="margin-top: 5px;"></i> <span class="col-grey" style="color: grey"> &nbsp;Bangalore</span><br>
+    <i class="fa fa-clock-o col-grey" aria-hidden="true" style="margin-top:5px;" style="color: grey"></i><span class="col-grey" style="color: grey">&nbsp;Joined February 2011</span><br>
+    <button style="width: 19%;background-color: #000500;color: white;height: 30px;border-color: #000500;border-radius: 4px;margin-top:10px;margin-bottom: 15px;">Tweet to Silaja</button><br>
+    <i class="fa fa-camera" aria-hidden="true"  style="margin-bottom: 10px;color: grey"></i>141 photos and videos<br>
+    <img src="image2.jpg" style="width: 6%;height: 78px;border-radius: 5px">
+        <img src="image3.jpg" style="width: 6%;height: 78px;border-radius: 5px">
+            <img src="image4.jpg" style="width: 6%;height: 78px;border-radius: 5px"><br>
+            <img src="image5.jpg" style="width: 6%;height: 78px;border-radius: 5px">
+        <img src="image6.jpg" style="width: 6%;height: 78px;border-radius: 5px">
+            <img src="image7.jpg" style="width: 6%;height: 78px;border-radius: 5px">
+</div>
+</div>
+
+<div style="margin-top: 15px;">
+<div class="whiteback">
+	<b style="font-size: 18px">
+	<span>Tweets </span>&nbsp;&nbsp;
+	<span>Tweets and replies</span>
+</b>
+</div>
+
+<div class="whiteback">
+	<div style="display: flex">
+	<div class="flex-img">
+	<span><img src="image1.jpg" style="width: 25px;height: 25px"></span>
+</div>
+<div class="flex-text">
+	<span><b>Silaja</b></span>
+	<span class="col-grey">@sailu</span>
+	<span class="col-grey">.5h</span><span style="float: right"><i class="fa fa-map-marker" class="col-grey" style="color: grey"></i></span>
+
+<div>
+	<div style="font-size: 20px;margin-top: 5px;margin-bottom: 5px;">
+	Because Lords od the Rings. #LOTR
+</div>
+<div>
+	<img src="image2.jpg" style="    width: 100%;
+    height: 280px;border-radius: 4px;">
+</div>
+<div style="margin-top: 10px;">
+	<div>
+	<div style="    display: flex;font-size: 13px;">
+		<div style="display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;" class="col-grey">
+	<i class="fa fa-reply" aria-hidden="true" style="height: 10px"></i>
+	<i class="fa fa-retweet" aria-hidden="true">&nbsp;2</i>
+	<i class="fa fa-star" aria-hidden="true">&nbsp;3</i>
+	<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+</div>
+	<div style="flex: 1;
+    text-align: right;">
+	View more photos and Videos
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!---for the secong image--->
+
+
+<div class="whiteback" >
+	<div style="display: flex;">
+	<div class="flex-img">
+	<span><img src="image1.jpg" style="width: 25px;height: 25px"></span>
+</div>
+<div class="flex-text">
+	<div>
+	<span><b>Silaja</b></span>
+	<span class="col-grey">@sailu</span>
+	<span class="col-grey">.5h</span><span style="float: right"><i class="fa fa-map-marker" class="col-grey" style="color: grey"></i></span>
+</div>
+
+<div>
+<div style="font-size: 20px;margin-top: 5px;">
+<span>What Language do they speak in Bangalore?</span>
+<br><br>
+C++
+</div>
+<div style="margin-top: 10px;">
+	<div class="flex-icon">
+	<i class="fa fa-reply" aria-hidden="true"></i>
+	<i class="fa fa-retweet" aria-hidden="true">&nbsp;1</i>
+	<i class="fa fa-star" aria-hidden="true">&nbsp;2</i>
+	<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!---for third image--->
+
+<div class="whiteback">
+	<div style="display: flex">
+	<div class="flex-img">
+	<span><img src="image1.jpg" style="width: 25px;height: 25px"></span>
+</div>
+<div class="flex-text">
+	<span  ><b>Silaja</b></span>
+	<span class="col-grey">@sailu</span>
+	<span class="col-grey">.5h</span><span style="float: right"><i class="fa fa-map-marker" class="col-grey" style="color: grey"></i></span>
+
+<div>
+<div style="font-size: 20px;margin-top: 5px;">
+<span>Planning to start a group called teetotalers<br>Club.<br>Bring Your own Bisleri.</span>
+</div>
+<div style="margin-top: 10px;">
+	<div class="flex-icon">
+	<i class="fa fa-reply" aria-hidden="true"></i>
+	<i class="fa fa-retweet" aria-hidden="true"></i>
+	<i class="fa fa-star" aria-hidden="true">&nbsp;5</i>
+	<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<!--for third grid-->
+
+
+<div style="margin-left: 15px;width: 78%;margin-top: 15px;">
+	<div class="whiteback"  style="border-radius: 4px;
+    border: 1px solid lightgrey">
+		<div>
+		<span class="col-grey" style="font-size: 20px;">Who to follow.</span><b>
+		<span style="font-size: 14px;">Refresh.</span>
+		<span style="font-size: 14px;">viewall</span></b>
+	</div>
+	<div style="display: flex;margin-top: 15px;">
+		<div><span><img src="image8.jpg" style="width: 60px;
+    height: 60px;border-radius: 4px;"></span>
+</div>
+<div  class="grid3textdots">
+	<div class="text-dots"><b>
+	Simon Helberg</b> <i class="fa fa-check-circle" aria-hidden="true" style="color: #8dcefa"></i> @sim...</div>
+	<button class="grid3follow"><i class="fa fa-user-plus" aria-hidden="true" style="color: #79b9f0"></i>  Follow</button>
+</div>
+<div class="grid-3cross">
+	x
+</div>
+	</div>
+
+
+
+<div style="display: flex;margin-top: 10px;">
+		<div><span><img src="image9.jpg" style="width: 60px;
+    height: 60px;border-radius: 4px;"></span>
+</div>
+<div  class="grid3textdots">
+	<div class="text-dots">
+		<b>
+	Sunidhi chauhan</b> <i class="fa fa-check-circle" aria-hidden="true" style="color: #8dcefa"></i> @s...</div>
+	<button class="grid3follow"><i class="fa fa-user-plus" aria-hidden="true" style="color: #79b9f0"></i>  Follow</button>
+</div>
+<div  class="grid-3cross">
+	x
+</div>
+	</div>
+
+
+
+	<div style="display: flex;margin-top: 10px;">
+		<div><span><img src="image10.jpg" style="width: 60px;
+    height: 60px;border-radius: 4px;"></span>
+</div>
+<div  class="grid3textdots">
+	<div class="text-dots"><b>
+	The Big Bang Theory </b> <i class="fa fa-check-circle" aria-hidden="true" style="color: #8dcefa"></i> @sim...</div>
+	<button class="grid3follow"><i class="fa fa-user-plus" aria-hidden="true" style="color: #79b9f0"></i>  Follow</button>
+</div>
+<div  class="grid-3cross">
+	x
+</div>
+	</div>
+popular accounts . Find Friends
+
+
+
+		
+	</div>
+
+	<div>
+		<div class="whiteback" style="margin-top: 10px;">
+			<div style="margin-top: 5px;">
+				<span style="font-size: 20px;" class="col-grey">Trends.</span>.<span>change</span>
+			</div>
+				<div style="margin-top: 10px;font-size: 17px;">
+					#HappyBirthdayPM<br>
+					#worldFekuday<br>
+					#bypollresults<br>
+					#Modifailstest<br>#IncredibleASUS<br>
+					Dortmund<br>
+					Arsenal<br>
+					Wenger<br>
+					Immobile<br>
+					Basel<br>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+</body>
+</html>

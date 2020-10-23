@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.col-white {
+			color: white;
+			font-size: 18px;
+		}
+		.overallflex {
+			display: grid;
+  grid-template-columns: 60% 40%;
+		}
+		.loginbox {
+			background-color: white;
+			padding:10px;
+			border-radius: 4px;
+		}
+		.signupbox {
+			background-color: white;
+			padding:10px;
+			border-radius: 4px;
+			margin-top: 10px;
+		}
+		.wid-100 {
+			width: 100%;
+		}
+		.grid-left {
+margin-left: 30%;
+line-height: 30px;
+		}
+		.grid-right {
+margin-top: 20px;
+margin-right: 20%;
+		}
+		input {
+
+			border:1px solid lightgrey;
+			height: 27px;
+			border-radius: 4px;
+		}
+		input:hover {
+			border-color: skyblue;
+			border-style: solid;
+
+			box-shadow: 0px 0px 3px 0px skyblue;
+		}
+		.flex-temp {
+			display: flex;
+			margin-left: 14%;
+		}
+		.flex-pad {
+			padding-right: 10px;
+		}
+	</style>
+	<title></title>
+	<script>
+function validateform(){  
+var name=document.loginForm.name.value;  
+var password=document.loginForm.password.value;     
+if ((name==null || name=="")){  
+  alert("Name can't be blank");  
+  return false;  
+}else if((password.length<6)){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+} 
+function validatesignupform(){    
+var signupname=document.signupForm.signupname.value;
+var signuppassword=document.signupForm.signuppassword.value; 
+var email=document.signupForm.email.value;   
+if ((signupname==null || signupname=="")){  
+  alert("Full Name can't be blank");  
+  return false;  
+}else if((email==null || email=="")) {
+  	alert("email can't be blank");
+  	return false;
+} else if((signuppassword.length<6)){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+}
+</script> 
+</head>
+<body style="background:url(cycleback.jpg);background-size: cover;margin: 0;font-family: sans-serif;">
+	
+	<div  style="background-color: white;margin: 0;padding: 0;display: flex;justify-content: space-around;padding: 10px;">
+		<div>
+<i class="fa fa-twitter" aria-hidden="true" style="color: skyblue;font-size: 22px;"></i></div>
+<div>Language:English</div>
+
+	</div>
+
+
+<div class="overallflex">
+<div class="grid-left col-white" >
+	<h1 style="font-size: 40px;">Welcome to Twitter</h1>
+	<p style="font-size: 20px;">connect with your friends--and other<br>fascinating people. Get in-the-moment updates<br>on the things tat interest you. And watch events<br>unfold,in real time,from every angle.</p>
+</div>
+<div class="grid-right">
+	<form name="loginForm" onsubmit="return validateform()">
+		<div style="width: 300px">
+		<div class="loginbox" style="line-height: 38px;">
+			<input type="text" name="name" placeholder=" Phone, email or username" class="wid-100">
+			<input type="password" name="password" placeholder=" Password" style="width: 62%"><button style="color: #fff;
+    background-color: #52a7e7;
+    border-color: #52a7e7;border-radius: 5px;border-style: solid;font-size: 14px;margin-left: 10px;height: 30px;width: 31%" class="col-white" type="submit">sign in</button>
+			<div style="font-size: 13px;">
+			<input type="checkbox" name="" style="height: 13px;"><span style="color: grey"> Remember me . </span><a href="#" style="color: 	#93bfd1">Forgot password?</a>
+		</div>
+		</div>
+	</div>
+	</form>
+	<form name="signupForm" onsubmit="return validatesignupform()">
+		<div style="width: 300px">
+		<div class="signupbox">
+			New to Twitter?<span style="color: grey">Sign up</span>
+			<div style="    line-height: 42px;
+    margin-top: 10px;">
+			<input type="text" name="signupname" placeholder=" Full name" class="wid-100" ><br>
+			<input type="email" name="email" placeholder=" Email" class="wid-100"><br>
+			<input type="password" name="signuppassword" placeholder=" password" class="wid-100">
+		</div>
+			<button style="float: right;height: 30px;background: #ffb137;border-color: #ffb137;border-radius: 5px;border-style: solid;margin-top: 5px;border-color: transparent;"><b>Sign up for twitter</b></button>
+			<br><br>
+		</div>
+	</div>
+	</form>
+</div>
+</div>
+<div class="overallflex">
+	<div class="grid-left col-white" style="font-size: 14px;">
+		here's my dealing with certain javascript errors at 7:30am this<br> morning
+		<div>
+		<u>Tweet and photo by @couch</u><br>
+		<u>11:01 AM - 6 May 2014</u>
+	</div>
+	</div>
+</div>
+<center>
+<div class="flex-temp col-white" style="font-size: 10px;justify-content : center;margin-left: 0;margin-top:30px;">
+	<div class="flex-pad">About</div>
+	<div class="flex-pad">Help</div>
+	<div class="flex-pad">blog</div>
+	<div class="flex-pad">status</div>
+	<div class="flex-pad">Jobs</div>
+	<div class="flex-pad">Terms</div>
+	<div class="flex-pad">Privacy</div>
+	<div class="flex-pad">Cookies</div>
+	<div class="flex-pad">Ads info</div>
+	<div class="flex-pad">Brand</div>
+	<div class="flex-pad">Advertise</div>
+	<div class="flex-pad">Businesses</div>
+	<div class="flex-pad">Media</div>
+	<div class="flex-pad">Developers</div>
+	<div class="flex-pad">Directory</div>
+	<div class="flex-pad">@2014 Twitter</div>
+</div>
+</center>
+</body>
+</html>
